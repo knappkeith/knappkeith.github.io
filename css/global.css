@@ -105,6 +105,9 @@ nav li a:hover {
 
 #social {
 	background: grey;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
 }
 
 #social ul{
@@ -115,6 +118,7 @@ nav li a:hover {
 #social li{
 	float: left;
 	width: auto;
+	padding: 10px;
 }
 
 .column {
@@ -151,4 +155,7 @@ nav li a:hover {
 .column .btn:hover {
 	background: rgba(238, 69, 121, .5);
 	color: #fafafa;
+}
+.container {
+	text-align: center;
 }
