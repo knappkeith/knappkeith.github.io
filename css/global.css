@@ -104,12 +104,16 @@ nav li a:hover {
 	overflow: hidden;
 	padding: 10px;
 	text-align: center;
+	color: white;
+}
+#social h3 {
+	padding: 10px;
 }
 
 #social img {
 	padding: 10px;
 	padding-top: 10px;
-	width: 50px;
+	width: 45px;
 }
 #social a {
 	text-decoration: none;
