@@ -47,9 +47,10 @@ nav li a:hover {
 
 #brand {
 	text-indent: -9000px;
-	background: url(../images/cojorado.png) no-repeat top left;
+	background: url(../images/Monogram_Basic_Black.png) no-repeat top left;
+	background-size: cover;
 	height: 60px;
-	width: 60px;
+	width: 90px;
 	float: left;
 	margin: 5px;
 }
@@ -59,7 +60,7 @@ nav li a:hover {
 }
 
 #hero {
-	background: url(../images/tini-noblur.jpg) no-repeat top left;
+	background: url(../images/20141006-Denver_Skyline_Matt_Night_1.jpg) no-repeat top left;
 	text-align: center;
 	color: #fafafa;
 	padding: 25px 0;
@@ -110,15 +111,13 @@ nav li a:hover {
 	text-align: center;
 }
 
-#social ul{
-	float: right;
-	width: auto;
-}
-
-#social li{
-	float: left;
-	width: auto;
+#social img {
 	padding: 10px;
+	padding-top: 10px;
+	width: 50px;
+}
+#social a {
+	text-decoration: none;
 }
 
 .column {
@@ -131,11 +130,9 @@ nav li a:hover {
 	width: 90%;
 	max-width: 90%;
 	border-radius: 50%;
-	border: 5px solid #ccc;
-	box-shadow: 0 0px 10px 0px rgba(238, 69, 121, 1);
 }
 .column h4 {
-	color: #ee4579;
+	color: #1652CC;
 	font-size: 200%;
 	font-weight: bold;
 	margin: 15px 0;
@@ -145,16 +142,16 @@ nav li a:hover {
 	margin-bottom: 15px;
 }
 .column .btn {
-	border: 3px solid #ee4579;
+	border: 3px solid #1652CC;
 	font-size: 150%;
 	display: inline-block;
 	text-decoration: none;
-	color: #ee4579;
+	color: #1652CC;
 	padding: 10px;
 }
 .column .btn:hover {
-	background: rgba(238, 69, 121, .5);
-	color: #fafafa;
+	background: rgba(22,82,204, .5);
+	color: #FFEA35;
 }
 .container {
 	text-align: center;
