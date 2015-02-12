@@ -27,10 +27,11 @@ nav ul {
 }
 nav li {
 	float: left;
-	width: 75px;
+	width: 75px;	
 }
+
 nav li a {
-	padding: 27px 10px;
+	padding: 20px 10px;
 	display: block;
 	height: 32px;
 	text-decoration: none;
@@ -41,9 +42,22 @@ nav li a {
 	-o-transition: all 750mss ease-in-out;
 	transition: all 750ms ease-in-out;
 }
+
 nav li a:hover {
-	background: rgba(22,82,204, 1);
+	margin: 8px 0 0 0;
+	background: rgba(22,82,204, .8);
 	color: #FFEA35;
+}
+
+footer {
+	background: #333;
+	text-align: center;
+	color: rgba(255,255,255,.4);
+	padding: 10px;
+}
+
+footer a {
+	color: rgba(255,255,255,.4);
 }
 
 #brand {
@@ -101,13 +115,13 @@ nav li a:hover {
 }
 
 #social {
-	background: grey;
+	background: #333;
 	overflow: hidden;
 	padding: 10px;
 	text-align: center;
 	color: white;
 }
-#social h3 {
+#social h2 {
 	padding: 10px;
 }
 
