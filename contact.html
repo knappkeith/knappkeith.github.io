@@ -26,12 +26,27 @@
 		</section>
 		<section id="main-content">
 			<div class="container">
-				<h3>Go ahead and send me a message, I will try to get back to you as soon as posible!</h3>
-				<form action="http://formspree.io/knapp.keith@gmail.com" method="POST">
-					<input type="email" name="_replyto">
-					<textarea name="body"></textarea>
-					<input type="submit" value="Send">
-				</form>
+				<h3>Go ahead and send me a message, I will get back to you as soon as possible!</h3>
+				<div id="contact-me">
+					<form action="http://formspree.io/knapp.keith@gmail.com" method="POST">
+						<div>
+							<label for="name">What do they call you:</label>
+							<input type="text" name="name">
+						</div>
+						<div>
+							<label for="_replyto">Your Email Address:</label>
+							<input type="email" name="_replyto">
+						</div>
+						<div>
+							<label for="body">What's on your Mind:</label>
+							<textarea name="body"></textarea>
+						</div>
+						<div class="button">
+					        <button type="reset">Clear</button>
+					        <button type="submit">Send Email</button>	
+					    </div>
+					</form>
+				</div>
 			</div>
 		</section>
 		<section id="social">

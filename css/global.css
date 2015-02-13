@@ -117,6 +117,74 @@ footer a {
 	text-shadow: 2px 2px 2px rgba(54, 184, 237, 1);
 }
 
+#contact-me {
+	/* Just to center the form on the page */
+    margin: 0 auto;
+    width: 650px;
+    /* To see the outline of the form */
+    padding: 20px;
+    border: 7px solid rgba(73, 79, 90, .8);
+    border-radius: 20px;
+}
+
+#contact-me form div + div {
+    margin-top: 1em;
+}
+
+#contact-me label {
+    /* To make sure that all label have the same size and are properly align */
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+    color: rgba(73, 79, 90, .8);
+}
+
+#contact-me input, textarea {
+	font-size: 15px;
+	color: rgba(73, 79, 90, .6);
+	text-align: center;
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid rgba(73, 79, 90, .8);
+    height: 30px;
+    border-radius: 3px;
+}
+
+#contact-me input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: rgba(54, 184, 237, 1);
+}
+
+#contact-me textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+    text-align: left;
+
+    /* To give enough room to type some text */
+    height: 10em;
+    resize: vertical;
+}
+
+.button {
+    padding-left: 60px;
+    display: block;
+    text-align: center;
+}
+#contact-me button {
+    margin-left: 10em;
+    font-size: 15px;
+    color: rgba(73, 79, 90, .8);
+    border-radius: 5px;
+}
+#contact-me button:hover {
+	color: rgba(54, 184, 237, 1);
+}
+
 #social {
 	background: rgba(73, 79, 90, 1);
 	overflow: hidden;
