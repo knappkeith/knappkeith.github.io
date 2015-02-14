@@ -77,10 +77,11 @@ footer a {
 #hero {
 	background: url(../images/20140721-111-Glacier_NP.jpg) no-repeat top left;
 	text-align: center;
-	color: #333;
+	color: black;
 	padding: 25px 0;
 	height: 350px;
 	background-size: cover;
+	text-shadow: 1px 1px 1px rgba(54, 184, 237, 1);
 }
 
 #hero img {
@@ -89,7 +90,7 @@ footer a {
 	margin-top: 30px;
 	opacity: 1;
 	transition: all 1s ease-in-out;
-	border: 2px solid rgba(73, 79, 90, .8);
+	border: 2px solid black;
 }
 
 #hero h2 {
@@ -97,12 +98,12 @@ footer a {
 	margin: 15px;
 }
 #hero .city {
-	border: 3px solid #fff;
+	/*border: 3px solid #fff;*/
 	padding: 10px 20px;
 	display: inline-block;
 	text-transform: uppercase;
-	color: rgba(54, 184, 237, 1);
-	background: rgba(0,0,0,.50);
+	color: black;
+	/*background: rgba(0,0,0,.50);*/
 }
 #main-content {
 	padding: 25px 0;
@@ -115,6 +116,14 @@ footer a {
 	text-align: center;
 	color: rgba(73, 79, 90, 1);
 	text-shadow: 2px 2px 2px rgba(54, 184, 237, 1);
+}
+
+#main-content h4 {
+	padding: 20px;
+	font-size: 150%; 
+	text-align: center;
+	color: rgba(73, 79, 90, 1);
+	text-shadow: 1px 1px 1px rgba(54, 184, 237, 1);
 }
 
 #contact-me {
@@ -143,7 +152,6 @@ footer a {
 #contact-me input, textarea {
 	font-size: 15px;
 	color: rgba(73, 79, 90, .6);
-	text-align: center;
     /* To give the same size to all text field */
     width: 300px;
     -moz-box-sizing: border-box;
@@ -153,6 +161,8 @@ footer a {
     border: 1px solid rgba(73, 79, 90, .8);
     height: 30px;
     border-radius: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 #contact-me input:focus, textarea:focus {
@@ -183,6 +193,12 @@ footer a {
 }
 #contact-me button:hover {
 	color: rgba(54, 184, 237, 1);
+}
+
+#resume {
+	border: 2px solid rgba(73, 79, 90, .8);
+	/*border-radius: 10px;*/
+	vertical-align: middle;
 }
 
 #social {
