@@ -8,9 +8,11 @@ body {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
+
 h1, h2, h3, h4, h5 {
 	font-family: 'Bree Serif', serif;
 }
+
 nav {
 	position: fixed;
 	top: 0;
@@ -22,10 +24,12 @@ nav {
 	font-weight: 700;
 	z-index: 1000;
 }
+
 nav ul {
 	float: right;
 	width: auto;
 }
+
 nav li {
 	float: left;
 	width: 110px;	
@@ -70,6 +74,7 @@ footer a {
 	float: left;
 	margin: 5px;
 }
+
 .container {
 	width: 1024px;
 	margin: 0 auto;
@@ -98,6 +103,7 @@ footer a {
 	font-size: 300%;
 	margin: 15px;
 }
+
 #hero .city {
 	/*border: 3px solid #fff;*/
 	padding: 10px 20px;
@@ -106,6 +112,7 @@ footer a {
 	color: black;
 	/*background: rgba(0,0,0,.50);*/
 }
+
 #main-content {
 	padding: 25px 0;
 	overflow: hidden;
@@ -113,6 +120,7 @@ footer a {
 
 #main-content h3 {
 	padding: 30px;
+	margin-top: 20px;
 	font-size: 300%; 
 	text-align: center;
 	color: rgba(73, 79, 90, 1);
@@ -186,12 +194,14 @@ footer a {
     display: block;
     text-align: center;
 }
+
 #contact-me button {
     margin-left: 10em;
     font-size: 15px;
     color: rgba(73, 79, 90, .8);
     border-radius: 5px;
 }
+
 #contact-me button:hover {
 	color: rgba(54, 184, 237, 1);
 }
@@ -209,6 +219,7 @@ footer a {
 	text-align: center;
 	color: white;
 }
+
 #social h2 {
 	padding: 10px;
 }
@@ -219,6 +230,7 @@ footer a {
 	width: 45px;
 
 }
+
 #social a {
 	text-decoration: none;
 }
@@ -229,23 +241,27 @@ footer a {
 	padding: 15px;
 	text-align: center;
 }
+
 .column img {
 	width: 90%;
 	max-width: 90%;
 	border-radius: 50%;
 	border: 2px solid rgba(73, 79, 90, .8);
 }
+
 .column h4 {
 	color: rgba(73, 79, 90, 1);
 	font-size: 200%;
 	font-weight: bold;
 	margin: 15px 0;
 }
+
 .column p {
 	color: rgba(54, 184, 237, 1);
 	font-size: 130%;
 	margin-bottom: 15px;
 }
+
 .column .btn {
 	border: 3px solid rgba(54, 184, 237, 1);
 	font-size: 150%;
@@ -261,6 +277,7 @@ footer a {
 	-o-transition: all 750mss ease-in-out;
 	transition: all 750ms ease-in-out;
 }
+
 .column .btn:hover {
 	border: 3px solid rgba(73, 79, 90, 1);
 	border-radius: 10px;
@@ -268,13 +285,9 @@ footer a {
 	color: rgba(73, 79, 90, 1);
 }
 
-
-
-
-
-
-
-
+.photo-container {
+	overflow: hidden;
+}
 
 .photo-column {
 	float: left;
@@ -282,49 +295,16 @@ footer a {
 	padding: 15px;
 	text-align: center;
 }
+
 .photo-column div {
 	margin: 0 auto;
-	border-radius: 15px;
+	border-radius: 50%;
 	border: 2px solid rgba(73, 79, 90, .8);
 }
+
 .photo-column h5 {
 	font-size: 15px;
 }
-/*
-.photo-column h4 {
-	color: rgba(73, 79, 90, 1);
-	font-size: 200%;
-	font-weight: bold;
-	margin: 15px 0;
-}
-.photo-column p {
-	color: rgba(54, 184, 237, 1);
-	font-size: 130%;
-	margin-bottom: 15px;
-}
-.photo-column .btn {
-	border: 3px solid rgba(54, 184, 237, 1);
-	font-size: 150%;
-	display: inline-block;
-	text-decoration: none;
-	background: rgba(73, 79, 90, .8);
-	color: rgba(54, 184, 237, 1);
-	padding: 10px;
-	border-radius: 5px;
-	-webkit-transition: all 750ms ease-in-out;
-	-moz-transition: all 750ms ease-in-out;
-	-ms-transition: all 750ms ease-in-out;
-	-o-transition: all 750mss ease-in-out;
-	transition: all 750ms ease-in-out;
-}*/
-
-
-
-
-
-
-
-
 
 .container {
 	text-align: center;
