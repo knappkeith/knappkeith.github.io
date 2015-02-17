@@ -20,6 +20,7 @@ nav {
 	height: 70px;
 	width: 100%;
 	font-weight: 700;
+	z-index: 1000;
 }
 nav ul {
 	float: right;
@@ -111,7 +112,7 @@ footer a {
 }
 
 #main-content h3 {
-	padding: 20px;
+	padding: 30px;
 	font-size: 300%; 
 	text-align: center;
 	color: rgba(73, 79, 90, 1);
@@ -266,6 +267,65 @@ footer a {
 	background: rgba(54, 184, 237, 1);
 	color: rgba(73, 79, 90, 1);
 }
+
+
+
+
+
+
+
+
+
+.photo-column {
+	float: left;
+	width: 30%;
+	padding: 15px;
+	text-align: center;
+}
+.photo-column div {
+	margin: 0 auto;
+	border-radius: 15px;
+	border: 2px solid rgba(73, 79, 90, .8);
+}
+.photo-column h5 {
+	font-size: 15px;
+}
+/*
+.photo-column h4 {
+	color: rgba(73, 79, 90, 1);
+	font-size: 200%;
+	font-weight: bold;
+	margin: 15px 0;
+}
+.photo-column p {
+	color: rgba(54, 184, 237, 1);
+	font-size: 130%;
+	margin-bottom: 15px;
+}
+.photo-column .btn {
+	border: 3px solid rgba(54, 184, 237, 1);
+	font-size: 150%;
+	display: inline-block;
+	text-decoration: none;
+	background: rgba(73, 79, 90, .8);
+	color: rgba(54, 184, 237, 1);
+	padding: 10px;
+	border-radius: 5px;
+	-webkit-transition: all 750ms ease-in-out;
+	-moz-transition: all 750ms ease-in-out;
+	-ms-transition: all 750ms ease-in-out;
+	-o-transition: all 750mss ease-in-out;
+	transition: all 750ms ease-in-out;
+}*/
+
+
+
+
+
+
+
+
+
 .container {
 	text-align: center;
 }
