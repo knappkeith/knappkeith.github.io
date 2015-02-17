@@ -47,6 +47,10 @@
 						</div>
 						<h4>Stream</h4>
 						<h5>Roosevelt National Forest, Colorado</h5>
+						<div id='details-001'>
+
+							
+						</div>
 					</div>
 					<div class="photo-column">
 						<div class="nailthumb-container">
@@ -141,8 +145,16 @@
 		</section>
 		<footer>
 			<p>
-			&#169; 2015 Keith. Powered by <a href="https://github.com/knappkeith/knappkeith.github.io">GitHub Pages</a> & snuggly little kittens!
+			&#169;<span id='year'></span> Keith. Powered by <a href="https://github.com/knappkeith/knappkeith.github.io">GitHub Pages</a> & snuggly little kittens!
 			</p>
+			<script>
+				getYear();
+				function getYear() { 
+					d = new Date()
+					n = d.getFullYear()
+					document.getElementById('year').innerHTML = n; 
+				}
+				</script>
 		</footer>
 	</body>
 </html>
