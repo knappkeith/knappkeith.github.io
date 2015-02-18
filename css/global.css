@@ -86,8 +86,11 @@ footer a {
 	color: black;
 	padding: 25px 0;
 	height: 350px;
+	
+	background-size: auto;
 	background-size: cover;
 	text-shadow: 1px 1px 1px rgba(54, 184, 237, 1);
+
 }
 
 #hero img {
@@ -308,4 +311,12 @@ footer a {
 
 .container {
 	text-align: center;
+}
+
+.square {
+	width: 200px;
+    height: 200px;
+}
+.placeholder {
+	border: none;
 }
