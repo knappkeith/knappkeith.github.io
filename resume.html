@@ -5,8 +5,9 @@
 		<link rel="icon" type="image/png" href="images/Monogram_Basic_White.png">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/global.css">
+		<script src="js/global.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body onload="getYear()">
 		<header>
 			<nav>
 				<div class="container">
@@ -63,14 +64,6 @@
 			<p>
 			&#169;<span id='year'></span> Keith. Powered by <a href="https://github.com/knappkeith/knappkeith.github.io">GitHub Pages</a> & snuggly little kittens!
 			</p>
-			<script>
-				getYear();
-				function getYear() { 
-					d = new Date()
-					n = d.getFullYear()
-					document.getElementById('year').innerHTML = n; 
-				}
-			</script>
 		</footer>
 	</body>
 </html>

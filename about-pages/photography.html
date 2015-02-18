@@ -9,9 +9,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="../js/jquery.nailthumb.1.1.js" type="text/javascript"></script>
 		<script src="../js/lightbox.js"></script>
-		<script src="../js/pictures.js" type="text/javascript"></script>
+		<script src="../js/global.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body onload="getYear()">
 		<header>
 			<nav>
 				<div class="container">
@@ -47,10 +47,6 @@
 						</div>
 						<h4>Stream</h4>
 						<h5>Roosevelt National Forest, Colorado</h5>
-						<div id='details-001'>
-
-							
-						</div>
 					</div>
 					<div class="photo-column">
 						<div class="nailthumb-container">
@@ -147,14 +143,6 @@
 			<p>
 			&#169;<span id='year'></span> Keith. Powered by <a href="https://github.com/knappkeith/knappkeith.github.io">GitHub Pages</a> & snuggly little kittens!
 			</p>
-			<script>
-				getYear();
-				function getYear() { 
-					d = new Date()
-					n = d.getFullYear()
-					document.getElementById('year').innerHTML = n; 
-				}
-				</script>
 		</footer>
 	</body>
 </html>
