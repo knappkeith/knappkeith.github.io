@@ -12,7 +12,6 @@ $(function() {
     $(".detail-header").click(function () {
 
         $header = $(this);
-        //getting the next element
         var $content = $header.next();
         if ($header.text() == 'Show Details') {
             $content.show('drop');

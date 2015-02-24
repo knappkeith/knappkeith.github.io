@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+	<head>
+		<title>keith.photography</title>
+		<link rel="icon" type="image/png" href="../images/Monogram_Basic_White.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/global.css">
+		<link href="../css/lightbox.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<script src="../js/jquery.nailthumb.1.1.js" type="text/javascript"></script>
+		<script src="../js/lightbox.js"></script>
+		<script src="../js/global.js" type="text/javascript"></script>
+	</head>
+	<body onload="getYear()">
+		<header>
+			<nav>
+				<div class="container">
+					<h1 id="brand">Keith M Knapp</h1>
+				    <ul>
+				        <li>
+				        	<div>
+				        		<a href="../index.html">About</a>
+			        		</div>
+		        		</li>
+				        <li>
+				        	<a href="../resume.html">My Resume</a>
+			        	</li>
+				        <li>
+				        	<a href="../contact.html">Contact</a>
+				        </li>
+				    </ul>
+				</div>
+			</nav>
+		</header>
+		<section id="hero">
+			<img src="../images/Profile_1.jpg" alt="Keith Knapp"/>
+			<h2>Keith Knapp</h2>
+			<span class="city">Denver, CO</span>
+		</section>
+		<section id="main-content">
+			<div class="container">
+				<div class='photo-container'>
+					<div class="photo-column"></div>
+					<div class="photo-column">
+						<h3>My Photos</h3>
+					</div>
+					<div class="photo-column"></div>
+				</div>
+				<div class='photo-container'>
+					{LOOP File='Photos'}
+					<div class="photo-column">
+						<div class="nailthumb-container square show-loading">
+							<a href="../pictures/{FILE_NAME}" data-lightbox="my_picture" data-title="{TITLE_2}"><img src="../pictures/{FILE_NAME}" class="hide" alt="{TITLE_1}"></a>
+						</div>
+						<h4>{TITLE_1}</h4>
+						<h5>{TITLE_2}</h5>
+						<h6 class='detail-header'>Show Details</h6>
+						<table class='photo-details'>
+							<tr>
+								<th><img src="../images/icons/camera-icon_2.svg"></th>
+								<td>{CAMERA}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/lens-icon_1.svg"></th>
+								<td>{LENS}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/focal_length-icon_1.png"></th>
+								<td>{FOCAL_LENGTH}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/camera-icon_1.svg"></th>
+								<td>{FSTOP}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/timer-icon_1.svg"></th>
+								<td>{EXPOSURE}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/iso-icon_1.svg"></th>
+								<td>{ISO}</td>
+							</tr>
+						</table>
+					</div>
+					{/LOOP}
+					
+				</div>
+				<div class='photo-container'>
+					<div class="photo-column"></div>
+					<div class="photo-column">
+						<h3>My Panoramas</h3>
+					</div>
+					<div class="photo-column"></div>
+				</div>
+				<div class='photo-container'>
+	            	{LOOP File='Panoramas'}
+	            	<div class="photo-column">
+						<div class="nailthumb-container square show-loading">
+							<a href="../pictures/{FILE_NAME}" data-lightbox="panorama" data-title="{TITLE_2}"><img src="../pictures/{FILE_NAME}" class="hide" alt="{TITLE_1}"></a>
+						</div>
+						<h4>{TITLE_1}</h4>
+						<h5>{TITLE_2}</h5>
+						<h6 class='detail-header'>Show Details</h6>
+						<table class='photo-details'>
+							<tr>
+								<th><img src="../images/icons/camera-icon_2.svg"></th>
+								<td>{CAMERA}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/lens-icon_1.svg"></th>
+								<td>{LENS}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/focal_length-icon_1.png"></th>
+								<td>{FOCAL_LENGTH}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/camera-icon_1.svg"></th>
+								<td>{FSTOP}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/timer-icon_1.svg"></th>
+								<td>{EXPOSURE}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/iso-icon_1.svg"></th>
+								<td>{ISO}</td>
+							</tr>
+							<tr>
+								<th><img src="../images/icons/panoramic-icon_2.svg"></th>
+								<td>{IMAGES}</td>
+							</tr>
+						</table>
+					</div>
+					{/LOOP}
+				</div>
+			</div>
+		</section>
+		<section id="social">
+			<div class="container">
+				<h2>I'm pretty social too. We should be friends.</h2>
+				<a href="https://www.facebook.com/knapp.keith" target='_blank'>
+					<img src="../images/icons/facebook.svg" alt="Facebook" />
+				</a>
+				<a href="http://instagram.com/stoutmasterflex/" target='_blank'>
+					<img src="../images/icons/instagram.svg" alt="Instagram" />
+				</a>
+				<a href="https://github.com/knappkeith" target='_blank'>
+					<img src="../images/icons/github.svg" alt="GitHub" />
+				</a>
+				<a href="https://www.linkedin.com/in/knappkeith" target='_blank'>
+					<img src="../images/icons/linkedin.svg" alt="LinkedIn" />
+				</a>
+				<a href="https://www.flickr.com/photos/keithknapp/" target='_blank'>
+					<img src="../images/icons/flickr-logo.png" alt="Flickr" />
+				</a>
+				<a href="https://plus.google.com/u/0/+KeithKnapp_M/" target='_blank'>
+					<img src="../images/icons/google_plus.png" alt="Google+" />
+				</a>
+			</div>
+		</section>
+		<footer>
+			<p>
+			&#169;<span id='year'></span> Keith. Powered by <a href="https://github.com/knappkeith/knappkeith.github.io">GitHub Pages</a> & snuggly little kittens!
+			</p>
+		</footer>
+	</body>
+</html>

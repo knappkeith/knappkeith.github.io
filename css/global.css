@@ -1,18 +1,17 @@
-/* Place site styles below! 
-
-Happy Coding! */
+/*General*/
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Bree+Serif);
-
 body {
 	padding-top: 70px;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
-
 h1, h2, h3, h4, h5 {
 	font-family: 'Bree Serif', serif;
 }
+/*end General*/
 
+
+/*NAV*/
 nav {
 	position: fixed;
 	top: 0;
@@ -24,17 +23,14 @@ nav {
 	font-weight: 700;
 	z-index: 1000;
 }
-
 nav ul {
 	float: right;
 	width: auto;
 }
-
 nav li {
 	float: left;
 	width: 110px;	
 }
-
 nav li a {
 	padding: 20px 10px;
 	display: block;
@@ -47,24 +43,11 @@ nav li a {
 	-o-transition: all 750mss ease-in-out;
 	transition: all 750ms ease-in-out;
 }
-
 nav li a:hover {
 	margin: 8px 0 0 0;
 	background: rgba(73, 79, 90, .8);
 	color: rgba(54, 184, 237, 1);
 }
-
-footer {
-	background: rgba(73, 79, 90, 1);
-	text-align: center;
-	color: rgba(54, 184, 237, .6);
-	padding: 10px;
-}
-
-footer a {
-	color: rgba(54, 184, 237, .6);
-}
-
 #brand {
 	text-indent: -9000px;
 	background: url(../images/Monogram_Basic_Black.png) no-repeat top left;
@@ -72,28 +55,47 @@ footer a {
 	height: 60px;
 	width: 90px;
 	float: left;
-	margin: 5px;
+	margin: 5px 5px 5px 25px;
+	/*padding-left: 20px;*/
 }
+/*End NAV*/
 
+
+/*Footer*/
+footer {
+	background: rgba(73, 79, 90, 1);
+	text-align: center;
+	color: rgba(54, 184, 237, .6);
+	padding: 20px;
+}
+footer a {
+	color: rgba(54, 184, 237, .6);
+}
+/*End Footer*/
+
+
+/*Container*/
 .container {
-	width: 80%;
+	width: 100%;
 	max-width: 1024px;
 	margin: 0 auto;
+	text-align: center;
 }
+/*End Container*/
 
+
+/*Hero Image*/
 #hero {
 	background: url(../images/20140721-111-Glacier_NP.jpg) no-repeat top left;
 	text-align: center;
 	color: black;
 	padding: 25px 0;
-	height: 350px;
-	
+	height: 350px;	
 	background-size: auto;
 	background-size: cover;
 	text-shadow: 1px 1px 1px rgba(54, 184, 237, 1);
 
 }
-
 #hero img {
 	width: 150px;
 	border-radius: 50%;
@@ -102,26 +104,24 @@ footer a {
 	transition: all 1s ease-in-out;
 	border: 2px solid black;
 }
-
 #hero h2 {
 	font-size: 300%;
 	margin: 15px;
 }
-
 #hero .city {
-	/*border: 3px solid #fff;*/
 	padding: 10px 20px;
 	display: inline-block;
 	text-transform: uppercase;
 	color: black;
-	/*background: rgba(0,0,0,.50);*/
 }
+/*End Hero Image*/
 
+
+/*Main Content*/
 #main-content {
 	padding: 25px 0;
 	overflow: hidden;
 }
-
 #main-content h3 {
 	padding: 30px;
 	margin-top: 20px;
@@ -130,7 +130,6 @@ footer a {
 	color: rgba(73, 79, 90, 1);
 	text-shadow: 2px 2px 2px rgba(54, 184, 237, 1);
 }
-
 #main-content h4 {
 	padding: 20px;
 	font-size: 150%; 
@@ -138,84 +137,75 @@ footer a {
 	color: rgba(73, 79, 90, 1);
 	text-shadow: 1px 1px 1px rgba(54, 184, 237, 1);
 }
+/*End Main Content*/
 
+
+/*Contact me page*/
 #contact-me {
-	/* Just to center the form on the page */
     margin: 0 auto;
     width: 650px;
-    /* To see the outline of the form */
     padding: 20px;
     border: 7px solid rgba(73, 79, 90, .8);
     border-radius: 20px;
 }
-
 #contact-me form div + div {
     margin-top: 1em;
 }
-
 #contact-me label {
-    /* To make sure that all label have the same size and are properly align */
     display: inline-block;
     width: 200px;
     text-align: right;
     margin-right: 10px;
     color: rgba(73, 79, 90, .8);
 }
-
 #contact-me input, textarea {
 	font-size: 15px;
 	color: rgba(73, 79, 90, .6);
-    /* To give the same size to all text field */
     width: 300px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-    /* To harmonize the look & feel of text field border */
     border: 1px solid rgba(73, 79, 90, .8);
     height: 30px;
     border-radius: 3px;
     padding-left: 7px;
     padding-right: 7px;
 }
-
 #contact-me input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
     border-color: rgba(54, 184, 237, 1);
 }
-
 #contact-me textarea {
-    /* To properly align multiline text fields with their labels */
     vertical-align: top;
     text-align: left;
-
-    /* To give enough room to type some text */
     height: 10em;
     resize: vertical;
 }
-
-.button {
+#contact-me .button {
     padding-left: 60px;
     display: block;
     text-align: center;
 }
-
 #contact-me button {
     margin-left: 10em;
     font-size: 15px;
     color: rgba(73, 79, 90, .8);
     border-radius: 5px;
 }
-
 #contact-me button:hover {
 	color: rgba(54, 184, 237, 1);
 }
+/*End contact me page*/
 
+
+/*Resume Page*/
 #resume {
 	border: 2px solid rgba(73, 79, 90, .8);
 	/*border-radius: 10px;*/
 	vertical-align: middle;
 }
+/*End Resume Page*/
 
+
+/*Social bar*/
 #social {
 	background: rgba(73, 79, 90, 1);
 	overflow: hidden;
@@ -223,162 +213,145 @@ footer a {
 	text-align: center;
 	color: white;
 }
-
 #social h2 {
 	padding: 10px;
 }
-
 #social img {
 	padding: 10px;
 	padding-top: 10px;
 	width: 45px;
 
 }
-
 #social a {
 	text-decoration: none;
 }
+/*End Social Bar*/
 
-.column {
-	float: left;
-	width: 30%;
-	padding: 15px;
-	text-align: center;
-}
 
-.column img {
-	width: 90%;
-	max-width: 90%;
-	border-radius: 50%;
-	border: 2px solid rgba(73, 79, 90, .8);
-}
-
-.column h4 {
-	color: rgba(73, 79, 90, 1);
-	font-size: 200%;
-	font-weight: bold;
-	margin: 15px 0;
-}
-
-.column p {
-	color: rgba(54, 184, 237, 1);
-	font-size: 130%;
-	margin-bottom: 15px;
-}
-
-.column .btn {
-	border: 3px solid rgba(54, 184, 237, 1);
-	font-size: 150%;
-	display: inline-block;
-	text-decoration: none;
-	background: rgba(73, 79, 90, .8);
-	color: rgba(54, 184, 237, 1);
-	padding: 10px;
-	border-radius: 5px;
-	-webkit-transition: all 750ms ease-in-out;
-	-moz-transition: all 750ms ease-in-out;
-	-ms-transition: all 750ms ease-in-out;
-	-o-transition: all 750mss ease-in-out;
-	transition: all 750ms ease-in-out;
-}
-
-.column .btn:hover {
-	border: 3px solid rgba(73, 79, 90, 1);
-	border-radius: 10px;
-	background: rgba(54, 184, 237, 1);
-	color: rgba(73, 79, 90, 1);
-}
-
-.photo-container {
+/*Flex Box Stuff*/
+.flex-container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	flex-flow: center;
-	justify-content: strech;
+	justify-content: stretch;
 	overflow: hidden;
 }
-
-.photo-column {
-	/*float: left;*/
-	/*width: 30%;*/
-	/*padding: 15px;*/
+.flex-column {
 	text-align: center;
 	padding: 30px 15px 0px 15px;
 	margin: 0 auto;
 }
-
-.photo-column div {
-	/*margin: 0 auto;*/
+.flex-column div {
 	border-radius: 50%;
 	border: 2px solid rgba(73, 79, 90, .8);
 	margin: 0 auto;
 }
-
-.photo-column h5 {
+.flex-column h5 {
 	font-size: 15px;
 }
-
-.photo-column h6 {
+.flex-column p {
+	width: 275px;
+	height: 100px;
+}
+.flex-column .flex-link {
+	display: inline-block;
 	font-size: 13px;
-	width: 50px;
+	width: 75px;
+	padding: 5px 20px 5px 20px;
+	margin: 10px auto;
+	border: 2px solid rgba(73, 79, 90, .8);
+	border-radius: 9px;
+	text-decoration: none;
+	text-align: center;
+	color: rgba(73, 79, 90, .8);
+}
+.flex-column .flex-link:hover {
+	color: white;
+	background: rgba(73, 79, 90, .8);
+}
+/*End Flex Box*/
+
+
+/*Photo Details and Button*/
+.flex-column h6 {
+	font-size: 13px;
+	width: 75px;
 	padding: 5px 20px 5px 20px;
 	margin: 10px auto;
 	border: 2px solid rgba(73, 79, 90, .8);
 	border-radius: 9px;
 }
-
-.photo-column h6:hover {
+.flex-column h6:hover {
 	color: white;
 	background-color: rgba(73, 79, 90, .8);
 }
-
-.photo-column table {
+.flex-column table {
 	width: 100%;
 }
-
 .photo-details th {
 	width: 50%;
 	text-align: right;
-	padding-top: 10px;
+	padding-top: 3px;
 	padding-right: 3px
 }
-
 .photo-details td {
+	font-size: 12px;
 	width: 50%;
 	text-align: left;
-	padding-top: 10px;
+	padding-top: 3px;
 	padding-left: 3px;
 	vertical-align: middle;
 }
-
 .photo-details img {
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 }
-
-.container {
-	text-align: center;
-}
-
 .photo-details {
 	display: none;
 	padding: 5px;
 }
-
-.detail-header {
-	border-radius: 0 solid white;
-}
-
 .photo-details {
 	border: none;
 	padding-top: 5px;
 }
+/*End Photo details and button*/
 
+
+
+/*Thumbnail classes*/
 .square {
 	width: 250px;
     height: 250px;
 }
 
-.placeholder {
-	border: none;
+.square-big {
+	width: 275px;
+    height: 275px;
+}
+
+/*Media Queries*/
+@media (max-width: 575px) {
+	#brand {
+		display: none;
+	}
+}
+@media (max-width: 775px) {
+	#contact-me {
+		width: 70%;
+
+	}
+	#contact-me input, textarea {
+		width: 100%;
+	}
+	#contact-me label {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	#contact-me .button {
+		padding-left: 0;
+	}
+	#contact-me button {
+		margin-left: 0;
+	}
 }

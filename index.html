@@ -5,6 +5,10 @@
 		<link rel="icon" type="image/png" href="images/Monogram_Basic_White.png">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<script src="js/jquery.nailthumb.1.1.js" type="text/javascript"></script>
 		<script src="js/global.js" type="text/javascript"></script>
 	</head>
 	<body onload="getYear()">
@@ -13,7 +17,7 @@
 				<div class="container">
 					<h1 id="brand">Keith M Knapp</h1>
 				    <ul>
-				        <li><div><a href="index.html">About</a></div></li>
+				        <li><a href="index.html">About</a></li>
 				        <li><a href="resume.html">My Resume</a></li>
 				        <li><a href="contact.html">Contact</a></li>
 				    </ul>
@@ -27,25 +31,37 @@
 		</section>
 		<section id="main-content">
 			<div class="container">
-				<h3>Hi! I'm a photographer,  adventurer, engineer, Denverite, and always a Heidelberger. </h3>
-				<section class="column">
-					<img src="images/20120414-002-NYC(DSC_3476).jpg" alt="The Photographer">
-					<h4>The Photographer</h4>
-					<p>Camera</p>
-					<a href="about-pages/photography.html" class="btn">See my photos</a>
-				</section>
-				<section class="column">
-					<img src="images/20140920-123-Moab_Cara(DSC_2732).jpg" alt="CSU">
-					<h4>The Adventurererer</h4>
-					<p>Sandals</p>
-					<a href="" class="btn">See me Adventure</a>
-				</section>
-				<section class="column">
-					<img src="images/Heidelberg.jpg" alt="Germany">
-					<h4>The Heidelberger</h4>
-					<p>Guten Morgen!</p>
-					<a href="" class="btn">See my home!</a>
-				</section>
+				<div class='flex-container'>
+					<div class='flex-column'>
+						<h3>Hi! I'm a photographer,  adventurer, engineer, Denverite, and always a Heidelberger. </h3>
+					</div>
+				</div>
+				<div class='flex-container'>
+					<div class='flex-column'>
+						<div class="nailthumb-container square-big show-loading">
+							<img src="images/20120414-002-NYC(DSC_3476).jpg" class='hide' alt="The Photographer">
+						</div>
+						<h4>The Photographer</h4>
+						<p>Photography is a hobby of mine, a very expensive hobby.  I don't do it for fame or fortune but for the joy of capturing a moment in time.  Nature and panoramas are my specialty.</p>
+						<a class='flex-link' href="about-pages/photography.html" class="btn">See my photos</a>
+					</div>
+					<div class='flex-column'>
+						<div class="nailthumb-container square-big show-loading">
+							<img src="images/20140920-123-Moab_Cara(DSC_2732).jpg" alt="CSU">
+						</div>
+						<h4>The Adventurererer</h4>
+						<p>I love going out and getting lost.  Whether it's in Forest, a Canyon or a bustling City discoving new places, trying new food and being lost for words at a beautiful view is what I live for.</p>
+						<a class='flex-link' href="" class="btn">See me Adventure</a>
+					</div>
+					<div class='flex-column'>
+						<div class="nailthumb-container square-big show-loading">
+							<img src="images/Heidelberg.jpg" alt="Germany">
+						</div>
+						<h4>The Heidelberger</h4>
+						<p>Born in Germnany, moved to Japan, back to Germany then Colorado for School and beyond!  I've been a lot of places and it makes up who I am.</p>
+						<a class='flex-link' href="" class="btn">See my home(s)!</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section id="social">
