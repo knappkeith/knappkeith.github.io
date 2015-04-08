@@ -318,6 +318,18 @@ footer a {
 }
 /*End Photo details and button*/
 
+/*Under Construction*/
+#under-construction h3 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+	padding-bottom: 10px;
+}
+#under-construction img {
+	padding-bottom: 30px;
+}
+/*End Under Construction*/
 
 
 /*Thumbnail classes*/
